@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+      <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Car rent</title>
+	<meta property="og:title" content="Car rent">
+
+
+<meta name="format-detection" content="telephone=no">
+
+<link rel="icon" type="image/png" href="./img/common/favicon.png">
+
+
+    <meta property="og:description" content="">
+
+              
+
+  <meta property="og:image" content="./img/common/og.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+
+
+
+    
+
+
+	<meta property="og:type" content="website">
+
+
+
+
+
+  <meta name="msapplication-TileColor" content="#1A1A1A">
+  <meta name="theme-color" content="#1A1A1A">
+
+
+
+      <link rel="stylesheet" href="./css/style.css?_v=20240608152733">
+  </head>
+
+  <body class="page-home">
+
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo logo">
+      <!-- <img src="./img/common/logo-header.svg" alt="" class="logo__img"> -->
+      carrent
+    </a>
+
+    <div class="header__menu menu">
+      <nav class="menu__nav">
+        <ul class="menu__nav-links">
+          <li class="menu__nav-item active">
+            <a href="#" class="menu__nav-link">Главная</a>
+          </li>
+          <li class="menu__nav-item menu__nav-item--has-children">
+            <a href="#cars" class="menu__nav-link">Автопарк</a>
+            <div class="menu__nav-dropdown">
+              <div class="menu__nav-dropdown-content">
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Купе</a>
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Сенданы</a>
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Маслкары</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#reviews" class="menu__nav-link">Отзывы</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#blog" class="menu__nav-link">Блог</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#faq" class="menu__nav-link">Вопрос-ответ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__contacts">
+    	<a href="#" class="header__contacts-phone">
+  			<svg class="header__contacts-icon">
+  				<use xlink:href="./img/common.crrt/icon-phone.svg#icon-phone" />
+  			</svg>
+        <span class="header__contacts-content">
+          <span class="header__contacts-label">Общие вопросы:</span>
+          <span class="header__contacts-text">+7 (922) 506 33 22</span>
+        </span>
+    	</a>
+
+    	<div class="socials header__socials">
+  
+    <a class="socials__link socials__link--facebook" aria-label="FB"
+      href="https://fb.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-facebook.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--instagram" aria-label="IG"
+      href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-instagram.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--whatsapp" aria-label="WA"
+      href="https://wa.me" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-whatsapp.svg#icon-whatsapp"></use>
+      </svg>
+    </a>
+  
+</div>
+
+    </div>
+
+    <button class="burger header__burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+
+      <main class="main">
+
+        <section class="hero section">
+          <div class="hero__container container">
+            <div class="hero__offer">
+              <h2 class="section-title hero__title">
+                Прокат автомобилей на&nbsp;Мадейре
+                <strong>от 40€ в сутки</strong>
+              </h2>
+              <div class="bookform hero__bookform">
+                  <div class="select hero__bookform-select">
+  <!-- <div class="select__label">Откуда вы узнали о нас?</div> -->
+  <select class="select__input"
+          name=""
+          tabindex="-1"
+          required>
+    <!-- <option value="" disabled selected>Выберите место получения</option> -->
+    <option value="" disabled selected>Pick-up location</option>
+    <option value="Локация 1">Локация 1</option>
+    <option value="Локация 2">Локация 2</option>
+    <option value="Локация 3">Локация 3</option>
+  </select>
+  <button class="select__toggle" type="button">Pick-up location</button>
+  <ul class="select__list">
+      <li>
+        <button class="select__option" type="button">Локация 1</button>
+      </li>
+      <li>
+        <button class="select__option" type="button">Локация 2</button>
+      </li>
+      <li>
+        <button class="select__option" type="button">Локация 3</button>
+      </li>
+  </ul>
+</div>
+                  <div class="select hero__bookform-select">
+  <!-- <div class="select__label">Откуда вы узнали о нас?</div> -->
+  <select class="select__input"
+          name=""
+          tabindex="-1"
+          required>
+    <!-- <option value="" disabled selected>Выберите место получения</option> -->
+    <option value="" disabled selected>Drop-off location</option>
+    <option value="Локация 1">Локация 1</option>
+    <option value="Локация 2">Локация 2</option>
+    <option value="Локация 3">Локация 3</option>
+  </select>
+  <button class="select__toggle" type="button">Drop-off location</button>
+  <ul class="select__list">
+      <li>
+        <button class="select__option" type="button">Локация 1</button>
+      </li>
+      <li>
+        <button class="select__option" type="button">Локация 2</button>
+      </li>
+      <li>
+        <button class="select__option" type="button">Локация 3</button>
+      </li>
+  </ul>
+</div>
+                  <div class="hero__bookform-range b_rangepicker" data-lang="ru">
+                    <label class="input b_datepicker js_form__control" data-lang="ru">
+  
+  <input
+    class="input__field"
+    name="user_birthday"
+    type="text"
+    
+      placeholder="Dates"
+    
+    readonly
+    required
+  >
+</label>
+
+                    <input type="text" calss="is-hidden" name="date_start" hidden>
+                    <input type="text" calss="is-hidden" name="date_end" hidden>
+
+                  </div>
+                  <div class="timepicker hero__bookform-timepicker"
+                       data-min="08:00"
+                       data-max="20:00"
+                       data-step="15"
+                  >
+                    <div class="timepicker__control">
+                      <div class="timepicker__drag"></div>
+                    </div>
+                    <input class="timepicker__value" type="text" name="time_from" inputmode="numeric">
+                  </div>
+                  <div class="timepicker hero__bookform-timepicker"
+                       data-min="08:00"
+                       data-max="20:00"
+                       data-step="15"
+                  >
+                    <div class="timepicker__control">
+                      <div class="timepicker__drag"></div>
+                    </div>
+                    <input class="timepicker__value" type="text" name="time_to" inputmode="numeric" value="14:10">
+                  </div>
+                  <button class="button-primary hero__bookform-submit">Подобрать автомобиль</button>
+              </div>
+            </div>
+            <div class="hero-gallery">
+              <div class="swiper hero-gallery__swiper">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide hero-gallery__slide">
+                    <div class="hero__media">
+                      <picture class="hero__media-pic">
+                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
+                      </picture>
+                      <div class="hero__meida-caption">
+                        <div class="wysiwyg">
+                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
+                        </div>
+                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="b_swiper__buttons hero-gallery__buttons">
+                <div class="swiper-button-prev hero-gallery__button-prev"></div>
+                <div class="swiper-button-next hero-gallery__button-next"></div>
+              </div>
+            </div>
+            <div class="hero__bullets">
+              <div class="bullet-card">
+                <div class="bullet-card__media">
+                  <picture class="bullet-card__pic">
+                    <img class="bullet-card__img" src="./img/common.crrt/icon-time.svg" alt="">
+                  </picture>
+                </div>
+                <div class="bullet-card__content wysiwyg">
+                  <h3>Консультация 24\7</h3>
+                  <p>По лучшим маршрутам и техническим вопросам </p>
+                </div>
+              </div>
+              <div class="bullet-card">
+                <div class="bullet-card__media">
+                  <picture class="bullet-card__pic">
+                    <img class="bullet-card__img" src="./img/common.crrt/icon-car.svg" alt="">
+                  </picture>
+                </div>
+                <div class="bullet-card__content wysiwyg">
+                  <h3>Возможность</h3>
+                  <p>Продлить аренду автомобиля на неограниченный срок</p>
+                </div>
+              </div>
+              <div class="bullet-card">
+                <div class="bullet-card__media">
+                  <picture class="bullet-card__pic">
+                    <img class="bullet-card__img" src="./img/common.crrt/icon-protect.svg" alt="">
+                  </picture>
+                </div>
+                <div class="bullet-card__content wysiwyg">
+                  <h3>В цену включена</h3>
+                  <p>Страховка, полный бак, карта Мадейры и налог </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="shelf section" id="cars">
+          <div class="shelf__container container">
+            <h2 class="section-title shelf__title">
+              Выберите свой <br>автомобиль
+            </h2>
+            <div class="shelf__content">
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+              <article class="car-card">
+	<div class="car-card__media">
+		<picture class="car-card__media-pic">
+		  	<img class="car-card__media-img" src="./img/single-car.crrt/car-image.jpg" alt="">
+		</picture>
+	</div>
+	<div class="car-card__body">
+		<header class="car-card__header">
+			<h3 class="car-card__title">
+				<a href="#" class="car-card__link">Nissan Micra 1.0 Automatic</a>
+			</h3>
+			<div class="car-card__header-info">
+				<span class="car-card__price">
+					<span>40</span>
+					<span class="currency">€</span>
+				</span>
+				<span class="car-card__caption">
+					*При аренде от 30 до 45 дней
+				</span>
+			</div>
+		</header>
+		<div class="car-card__bullets">
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-fuel.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Дизель</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-capacity.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-volume.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">5 мест</p>
+			</div>
+			<div class="car-card-bullet">
+				<div class="car-card-bullet__media">
+					<picture class="car-card-bullet__media-pic">
+						<img class="car-card-bullet__media-img" src="./img/common.crrt/icon-transmission.svg" alt="">
+					</picture>
+				</div>
+				<p class="card-card-bullet__caption">Автомат</p>
+			</div>
+		</div>
+		<a href="#" class="button-primary car-card__button">Забронировать машину</a>
+	</div>
+</article>
+            </div>
+            <div class="shelf__buttons">
+              <button class="button-secondary shelf__button-more">Показать еще машины</button>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section reviews">
+          <div class="container reviews__container">
+            <h2 class="section-title section-text--center reviews__title">Отзывы</h2>
+            <div class="reviews-carousel">
+              <div class="swiper reviews-carousel__swiper">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card">
+                      <div class="reviews-card__user">
+                        <picture class="reviews-card__user-pic">
+                          <source data-srcset="./img/reviews/review-photo.webp" type="image/webp">
+                          <img src="./img/reviews.crrt/review-photo.png" alt="" class="reviews-card__user-img">
+                        </picture>
+                        <h3 class="reviews-card__user-name">Алина Жиркова</h3>
+                      </div>
+                      <p class="reviews-card__feedback">
+                        Спасибо большое Юрию за консультацию. За час узнала куда сливается 40 тысяч из рекламного бюджета, поувольняла пол штата и наконец-то начала выходить в нормальный плюс по выручке!
+                        <br><br>
+                        Всем советую, быстро, чётко и по делу))
+                      </p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card reviews-card--has-media">
+                      <div class="reviews-card__media">
+                        <div class="b_video" data-video-url="https://www.youtube.com/watch?v=Is908MiWIV8"></div>
+                      </div>
+                    </article>
+                  </div>
+                  
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card">
+                      <div class="reviews-card__user">
+                        <picture class="reviews-card__user-pic">
+                          <source data-srcset="./img/reviews/review-photo.webp" type="image/webp">
+                          <img src="./img/reviews.crrt/review-photo.png" alt="" class="reviews-card__user-img">
+                        </picture>
+                        <h3 class="reviews-card__user-name">Алина Жиркова</h3>
+                      </div>
+                      <p class="reviews-card__feedback">
+                        Спасибо большое Юрию за консультацию. За час узнала куда сливается 40 тысяч из рекламного бюджета, поувольняла пол штата и наконец-то начала выходить в нормальный плюс по выручке!
+                        <br><br>
+                        Всем советую, быстро, чётко и по делу))
+                      </p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card reviews-card--has-media">
+                      <div class="reviews-card__media">
+                        <div class="b_video" data-video-url="https://www.youtube.com/watch?v=Is908MiWIV8"></div>
+                      </div>
+                    </article>
+                  </div>
+                  
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card">
+                      <div class="reviews-card__user">
+                        <picture class="reviews-card__user-pic">
+                          <source data-srcset="./img/reviews/review-photo.webp" type="image/webp">
+                          <img src="./img/reviews.crrt/review-photo.png" alt="" class="reviews-card__user-img">
+                        </picture>
+                        <h3 class="reviews-card__user-name">Алина Жиркова</h3>
+                      </div>
+                      <p class="reviews-card__feedback">
+                        Спасибо большое Юрию за консультацию. За час узнала куда сливается 40 тысяч из рекламного бюджета, поувольняла пол штата и наконец-то начала выходить в нормальный плюс по выручке!
+                        <br><br>
+                        Всем советую, быстро, чётко и по делу))
+                      </p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide reviews-carousel__slide">
+                    <article class="reviews-card reviews-card--has-media">
+                      <div class="reviews-card__media">
+                        <div class="b_video" data-video-url="https://www.youtube.com/watch?v=Is908MiWIV8"></div>
+                      </div>
+                    </article>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination reviews-carousel__pagination"></div> -->
+              <div class="swiper-scrollbar reviews-carousel__scrollbar"></div>
+
+              <div class="swiper-buttons reviews-carousel__buttons">
+                <div class="swiper-button-prev reviews-carousel__button-prev"></div>
+                <div class="swiper-button-next reviews-carousel__button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section blog" id="blog">
+	<h1 class="page-title section-title">Блог</h1>
+	<div class="container blog__container">
+		<div class="blog__masonry">
+			<article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Красочное платье «Райский сад» для Ирины</a>
+    </h3>
+    <p class="blog-card__desc">
+      Удивительное платье из цветов и звезд для Ирины Соколовой, вице-президента фонда «Сокол».
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ <article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Утепляемся: всем скидка 10% на пошив пальто!</a>
+    </h3>
+    <p class="blog-card__desc">
+      Дарим всем клиентам скидку 10% на пошив пальто! Предложение действительно до 31 октября 2019 года.
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ <article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Что надеть на фотосессию для выпускного альбома?</a>
+    </h3>
+    <p class="blog-card__desc">
+      Замкнутое множество, конечно, существенно уравновешивает критерий сходимости Коши. Ассортиментная политика предприятия решительно допускает связанный креатив. Теорема Гаусса
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ <article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Ряд Тейлора, не вдаваясь в подробности, неоднозначен</a>
+    </h3>
+    <p class="blog-card__desc">
+      Критерий интегрируемости недостаточно изменяет стратегический маркетинг, работая над проектом. Анализ зарубежного
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ <article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Предел последовательности осмысленно консолидирует бренд</a>
+    </h3>
+    <p class="blog-card__desc">
+      VIP-мероприятие отталкивает интеграл от функции, обращающейся в бесконечность в изолированной точке, учитывая результат предыдущих медиа-кампаний.
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ <article class="blog-card">
+  <div class="blog-card__info">
+    <div class="blog-card__media">
+      <picture class="blog-card__pic">
+      	<img  src="./img/common.b/loader.svg" data-src="./img/hero.crrt/hero-gallery.jpg" alt="" class="blog-card__img lazy">
+      </picture>
+    </div>
+    <h3 class="blog-card__title">
+      <a href="#" class="blog-card__link">Дифференциальное исчисление усиливает натуральный логарифм</a>
+    </h3>
+    <p class="blog-card__desc">
+      Рыночная информация категорически определяет экспериментальный сходящийся ряд, размещаясь во всех медиа. Интеграл от функции, обращающейся в бесконечность вдоль линии отнюдь не очевиден. Взаимодействие корпорации и
+    </p>
+  </div>
+  <div class="blog-card__buttons">
+  	<a href="#" class="blog-card__more">
+      <span class="blog-card__more-text">Подробнее</span>
+      <svg class="blog-card__more-icon">
+        <use href="./img/common.b/link-angle.svg#angle" />
+      </svg>
+  	</a>
+  </div>
+</article>
+ 
+		</div>
+		<ul class="pagination">
+			<li><a href="#"><</a></li>
+			<li class="active">
+				<span>1</span>
+			</li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">></a></li>
+		</ul>
+	</div>
+</section>
+
+
+        <section class="section faq" id="faq">
+	<div class="container faq__container">
+		<h2 class="section-title faq__title" data-aos="fade-up">Часто задаваемые <br> вопросы</h2>
+		<div class="faq__content">
+			<div class="faq__list">
+				<div class="bayan bayan--closer-minus faq-card">
+					<div class="faq-card__question">
+						<h3 class="faq-card__title">Вопрос 1</h3>
+					</div>
+					<div class="faq-card__answer wysiwyg">
+						<p>
+							Стоимость зависит от Вашего города и веса заказа. Доставим бесплатно при заказе от 100 тыс. рублей
+						</p>
+					</div>
+				</div>
+				<div class="bayan bayan--closer-minus faq-card">
+					<div class="faq-card__question">
+						<h3 class="faq-card__title">Вопрос 2</h3>
+					</div>
+					<div class="faq-card__answer wysiwyg">
+						<p>
+							Доставляем по всей России, также можем отправить в Беларусь, Казахстан и в любой другой уголок мира :)
+						</p>
+					</div>
+				</div>
+				<div class="bayan bayan--closer-minus faq-card">
+					<div class="faq-card__question">
+						<h3 class="faq-card__title">Вопрос 3</h3>
+					</div>
+					<div class="faq-card__answer wysiwyg">
+						<p>
+							У нас собственное производство в Бишкеке, Киргизия
+						</p>
+					</div>
+				</div>
+				<div class="bayan bayan--closer-minus faq-card">
+					<div class="faq-card__question">
+						<h3 class="faq-card__title">Вопрос 4</h3>
+					</div>
+					<div class="faq-card__answer wysiwyg">
+						<p>
+							Нет! Всю головную боль с налогами за ввоз товаров и перевод денег в Киргизию мы берем на себя. Вы оплачиваете на российский расчетный счет
+						</p>
+					</div>
+				</div>
+				<div class="bayan bayan--closer-minus faq-card">
+					<div class="faq-card__question">
+						<h3 class="faq-card__title">Вопрос 5</h3>
+					</div>
+					<div class="faq-card__answer wysiwyg">
+						<p>
+							Да, ткань точно турецкая и качественная. Это доказано многолетней работой с&nbsp;ней, также мы предоставляем сертификаты на ткань. Если опасаетесь - <br> закажите пробную партию, чтобы «пощупать» или проверить ее самостоятельно
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq-help">
+				<div class="faq-help__media">
+					<picture class="faq-help__media-pic">
+						<!-- <source srcset="./img/faq/faq-hero.jpg.webp" type="image/webp"> -->
+							<img src="./img/common/loader.svg" data-src="./img/faq.crrt/faq-hero.jpg" alt="" class="faq-help__media-img lazy">
+					</picture>
+				</div>
+				<h3 class="faq-help__title">Не нашли ответа <br> на&nbsp;свой вопрос?</h3>
+				<p class="faq-help__desc">
+					Свяжитесь с нами любым удобным&nbsp;способом — ответим на всё подробно.
+				</p>
+
+				<div class="faq__socials socials">
+					<a href="#" class="socials__link" aria-label="modniki-kids whatsapp">
+						<svg class="socials__icon">
+							<use xlink:href="./img/faq.crrt/whatsapp.svg#whatsapp" />
+						</svg>
+					</a>
+					<a href="#" class="socials__link" aria-label="modniki-kids telegram">
+						<svg class="socials__icon">
+							<use xlink:href="./img/faq.crrt/telegram.svg#telegram" />
+						</svg>
+					</a>
+					<a href="#" class="socials__link" aria-label="modniki-kids телефон">
+						<svg class="socials__icon">
+							<use xlink:href="./img/faq.crrt/tel.svg#tel" />
+						</svg>
+					</a>
+					<a href="#" class="socials__link" aria-label="modniki-kids почта">
+						<svg class="socials__icon">
+							<use xlink:href="./img/faq.crrt/mail.svg#mail" />
+						</svg>
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+      </main>
+
+      <footer class="footer">
+	<div class="container footer__container">
+	    <a href="#" class="footer__logo logo">
+	      <!-- <img src="./img/common/logo-header.svg" alt="" class="logo__img"> -->
+	      carrent
+	    </a>
+
+	    <div class="footer__links">
+	    	<div class="socials footer__socials">
+  
+    <a class="socials__link socials__link--facebook" aria-label="FB"
+      href="https://fb.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-facebook.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--instagram" aria-label="IG"
+      href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-instagram.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--whatsapp" aria-label="WA"
+      href="https://wa.me" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-whatsapp.svg#icon-whatsapp"></use>
+      </svg>
+    </a>
+  
+</div>
+
+	    	<ul class="footer__links-list">
+	    		<li class="footer__links-item">
+	    			<a href="#" class="link footer__links-link">Политика конфиденциальности</a>
+	    		</li>
+	    		<li class="footer__links-item">
+	    			<a href="#" class="link footer__links-link">Договор оферты</a>
+	    		</li>
+	    	</ul>
+	    </div>
+
+
+	    <div class="footer__contact">
+	    	<a href="#" class="footer__phone">
+	    		<span class="footer__phone-caption">Связаться с нами:</span>
+	    		<span class="footer__phone-text">+7 (495) 968-32-27</span>
+	    		<span class="footer__phone-caption">09:00 - 22:00 Мск</span>
+	    	</a>
+	    	<a href="#" class="footer__location">
+				<svg class="footer__location-icon">
+					<use xlink:href="./img/common.crrt/icon-geo.svg#icon-geo" />
+				</svg>
+				<span class="footer__location-address">109316, Мадейра, ул. За ухо, 25</span>
+	    	</a>
+	    </div>
+	</div>
+</footer>
+    </div>
+
+    
+
+    <script src="./js/index.min.js?_v=20240608152733"></script>
+  </body>
+</html>
