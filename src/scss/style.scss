@@ -12,9 +12,20 @@
 @include font('Museo Sans', normal, 500, '../resources/fonts/museo-sans/museo-sans-cyrl-500');
 @include font('Museo Sans', normal, 700, '../resources/fonts/museo-sans/museo-sans-cyrl-700');
 @include font('Museo Sans', normal, 900, '../resources/fonts/museo-sans/museo-sans-cyrl-900');
+
+@include font('Halvar Breitschrift', normal, 700, '../resources/fonts/halvar/HalvarBreit-Rg');
+@include font('HelveticaNeueCyr', normal, 700, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_black');
+@include font('HelveticaNeueCyr', normal, 400, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_roman');
+@include font('Geist', normal, 400, '../resources/fonts/resources/fonts/geist/Geist-Regular');
+@include font('Manrope', normal, 700, '../resources/fonts/manrope/Manrope-Bold');
+@include font('Manrope', normal, 400, '../resources/fonts/manrope/Manrope-Regular');
+@include font('Qanelas', normal, 700, '../resources/fonts/qanelas/Qanelas-Bold');
+@include font('Qanelas', normal, 400, '../resources/fonts/qanelas/Qanelas-Regular');
+@include font('Raleway', normal, 700, '../resources/fonts/raleway/Raleway-Bold'); 
+
 :root {
-  --ff-regular: "Museo Sans", sans-serif;
-  --ff-title: "Museo Sans", sans-serif;
+  --ff-regular: "HelveticaNeueCyr", sans-serif;
+  --ff-title: "Halvar Breitschrift", sans-serif;
 
   --fz-regular: 1.5rem;
   --fz-title: 4.5rem;
