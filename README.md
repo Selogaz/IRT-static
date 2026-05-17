@@ -1,4 +1,6 @@
-# Skillhouse
+# Integral Resolution Therapy
+
+GitHub Pages - https://selogaz.github.io/IRT-static/dist/main.html
 
 - [репо](https://github.com/beefheads/skillhouse-static)
 - [макет]()
