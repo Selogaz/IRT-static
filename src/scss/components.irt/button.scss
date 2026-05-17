@@ -1,0 +1,32 @@
+.button-primary {
+  --ff: var(--ff-button);
+  --fz: 1.4rem;
+  --fw: 700;
+  --lh: 1.6;
+  --ls: 0;
+
+  --padding-block: 2.4rem;
+  --padding-inline: 3.2rem;
+
+  --fg: var(--fg-button-primary);
+  --bg: var(--bg-button-primary);
+
+  --border-width: 0.1rem;
+  --border-color: var(--border-button-primary);
+  --border-radius: var(--radius-pill);
+
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-primary:hover {
+  @media (any-hover: hover) {
+    --bg: var(--bg-button-primary-hover);
+    --border-color: var(--bg-button-primary-hover);
+  }
+}
+
+.button-primary:active {
+  transform: translateY(0.1rem);
+}

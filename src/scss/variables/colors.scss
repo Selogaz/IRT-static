@@ -1,27 +1,40 @@
 :root {
-  // Colors
-  --c-primary: #ED7844;
-  --c-primary-dark: #EC713B;
-  --c-primary-shadow: #CF5C59;
-  --gradient-primary: radial-gradient(46.8% 50% at 58.93% 50%, var(--c-primary) 0%, var(--c-primary-dark) 100%);
+  // Акцентные цвета IRT
+  --c-primary: #565FA3;          // фиолетовый — кнопки, акцент
+  --c-primary-dark: #4A5290;
+  --c-primary-light: #ebf4fa;    // светлая подложка
 
-  --c-secondary: #3B99FF;
-  --gradient-secondary: linear-gradient(164deg, #6AC0FF 1.46%, #086FFF 102.79%);
+  // Текст
+  --fg-regular: #283137;         // основной
+  --fg-second: #2D2D2D;          // заголовки
+  --fg-third: #565FA3;           // акцентное слово в заголовке
+  --fg-muted: rgba(47, 60, 79, 0.85);
+  --fg-caption: #424242;
+  --fg-on: #fff;                 // на тёмном/цветном фоне
 
-  --fg-regular: #283137;
-  --fg-second: #2D2D2D;
-  --fg-third: #565FA3;
-  --fg-caption: #b3b4b5;
-  --fg-on: #fff;
+  // Ссылки
+  --fg-link-regular: #565FA3;
+  --fg-link-hover: #4A5290;
 
-  // BGs
+  // Фоны
   --bg-app: #EBF2F8;
   --bg-section-light: #fff;
   --bg-card: #fff;
-  --bg-card-dark: #383838;
+  --bg-card-muted: #f2f2f2;
+  --bg-glass: rgba(255, 255, 255, 0.45);
+  --bg-glass-strong: rgba(255, 255, 255, 0.4);
 
-  // nomads
+  // Кнопка первичная
+  --fg-button-primary: #fff;
+  --bg-button-primary: #565FA3;
+  --bg-button-primary-hover: #4A5290;
+  --border-button-primary: #565FA3;
+
+  // Бордеры
+  --c-border: rgba(43, 43, 43, 0.15);
+  --c-border-glass: rgba(255, 255, 255, 0.4);
+
+  // Статусы
   --c-error: #FF3b30;
   --c-success: #34C759;
 }
-

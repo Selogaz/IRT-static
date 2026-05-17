@@ -1,0 +1,68 @@
+<div class="swiper-slide quiz-form__slide" data-quiz-label="Почти готово">
+  <fieldset class="quiz-question quiz-question--contact">
+    <legend class="quiz-question__title">Как нам с вами связаться?</legend>
+    <div class="quiz-contact">
+      <input type="hidden" name="form_name" value="Квиз IRT — Почти готово">
+
+      <label class="quiz-contact__field">
+        <span class="quiz-contact__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6.6 10.8a14 14 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1L6.6 10.8Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <input class="quiz-contact__input" type="tel" name="phone"
+          placeholder="Введите номер телефона" autocomplete="tel">
+      </label>
+
+      <label class="quiz-contact__field">
+        <span class="quiz-contact__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.7-8 6v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1c0-3.3-3.6-6-8-6Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <input class="quiz-contact__input" type="text" name="name"
+          placeholder="Ваше имя" autocomplete="name">
+      </label>
+
+      <p class="quiz-contact__label">В каком мессенджере хотите <strong>забрать скидку и&nbsp;программу?</strong></p>
+
+      <div class="quiz-contact__messengers">
+        <label class="quiz-messenger">
+          <input class="quiz-messenger__input" type="radio" name="messenger" value="Max">
+          <span class="quiz-messenger__chip">
+            <img class="quiz-messenger__icon" src="@img/socials/icon-max.svg" alt="" width="20" height="20">
+            <span class="quiz-messenger__text">Max</span>
+          </span>
+        </label>
+        <label class="quiz-messenger">
+          <input class="quiz-messenger__input" type="radio" name="messenger" value="Telegram">
+          <span class="quiz-messenger__chip">
+            <img class="quiz-messenger__icon" src="@img/socials/icon-telegram.svg" alt="" width="20" height="20">
+            <span class="quiz-messenger__text">Telegram</span>
+          </span>
+        </label>
+        <label class="quiz-messenger">
+          <input class="quiz-messenger__input" type="radio" name="messenger" value="Вконтакте">
+          <span class="quiz-messenger__chip">
+            <img class="quiz-messenger__icon" src="@img/socials/icon-vk.svg" alt="" width="20" height="20">
+            <span class="quiz-messenger__text">Вконтакте</span>
+          </span>
+        </label>
+      </div>
+
+      <button type="button" class="quiz-contact__submit button-primary" data-quiz-submit>Получить консультацию</button>
+
+      <label class="quiz-consent">
+        <input class="quiz-consent__input" type="checkbox" name="consent_personal" checked>
+        <span class="quiz-consent__box" aria-hidden="true"></span>
+        <span class="quiz-consent__text">Даю согласие на обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="/privacy" target="_blank" rel="noopener">политикой обработки персональных данных</a></span>
+      </label>
+
+      <label class="quiz-consent">
+        <input class="quiz-consent__input" type="checkbox" name="consent_marketing" checked>
+        <span class="quiz-consent__box" aria-hidden="true"></span>
+        <span class="quiz-consent__text">Даю согласие на&nbsp;<a href="/privacy" target="_blank" rel="noopener">получение рекламных и&nbsp;информационных рассылок</a></span>
+      </label>
+    </div>
+  </fieldset>
+</div>

@@ -8,36 +8,51 @@
 
 
 // Шрифты
-@include font('Museo Sans', normal, 300, '../resources/fonts/museo-sans/museo-sans-cyrl-300');
-@include font('Museo Sans', normal, 500, '../resources/fonts/museo-sans/museo-sans-cyrl-500');
-@include font('Museo Sans', normal, 700, '../resources/fonts/museo-sans/museo-sans-cyrl-700');
-@include font('Museo Sans', normal, 900, '../resources/fonts/museo-sans/museo-sans-cyrl-900');
+// Halvar Breitschrift — заголовки. Подключаем реальные начертания семейства,
+// чтобы font-weight брал свой файл, а не имитировался браузером.
+@include font('Halvar Breitschrift', normal, 300, '../resources/fonts/halvar/HalvarBreit-Lt');
+@include font('Halvar Breitschrift', normal, 400, '../resources/fonts/halvar/HalvarBreit-Rg');
+@include font('Halvar Breitschrift', normal, 500, '../resources/fonts/halvar/HalvarBreit-Md');
+@include font('Halvar Breitschrift', normal, 700, '../resources/fonts/halvar/HalvarBreit-Bd');
+@include font('Halvar Breitschrift', normal, 800, '../resources/fonts/halvar/HalvarBreit-XBd');
+@include font('Halvar Breitschrift', normal, 900, '../resources/fonts/halvar/HalvarBreit-Blk');
 
-@include font('Halvar Breitschrift', normal, 700, '../resources/fonts/halvar/HalvarBreit-Rg');
-@include font('HelveticaNeueCyr', normal, 700, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_black');
+// HelveticaNeueCyr — основной текст, навигация, заголовки карточек.
+// В наборе есть только Thin / UltraLight / Roman / Black.
+// Настоящего Bold (~700) и Medium нет, поэтому 700 НЕ привязываем к Black
+// (он ~900 и выглядит слишком жирным против макета) — браузер сам сделает
+// умеренный синтетический bold из Roman, что ближе к Figma «Bold».
+@include font('HelveticaNeueCyr', normal, 200, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_ultralight');
 @include font('HelveticaNeueCyr', normal, 400, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_roman');
-@include font('Geist', normal, 400, '../resources/fonts/resources/fonts/geist/Geist-Regular');
-@include font('Manrope', normal, 700, '../resources/fonts/manrope/Manrope-Bold');
+@include font('HelveticaNeueCyr', normal, 900, '../resources/fonts/helveticaNeueCyr/helveticaneuecyr_black');
+
+@include font('Geist', normal, 400, '../resources/fonts/geist/Geist-Regular');
 @include font('Manrope', normal, 400, '../resources/fonts/manrope/Manrope-Regular');
-@include font('Qanelas', normal, 700, '../resources/fonts/qanelas/Qanelas-Bold');
+@include font('Manrope', normal, 700, '../resources/fonts/manrope/Manrope-Bold');
 @include font('Qanelas', normal, 400, '../resources/fonts/qanelas/Qanelas-Regular');
-@include font('Raleway', normal, 700, '../resources/fonts/raleway/Raleway-Bold'); 
+@include font('Qanelas', normal, 700, '../resources/fonts/qanelas/Qanelas-Bold');
+@include font('Raleway', normal, 700, '../resources/fonts/raleway/Raleway-Bold');
 
 :root {
   --ff-regular: "HelveticaNeueCyr", sans-serif;
   --ff-title: "Halvar Breitschrift", sans-serif;
+  --ff-accent: "Qanelas", sans-serif;
+  --ff-label: "Manrope", sans-serif;
+  --ff-button: "Raleway", sans-serif;
 
-  --fz-regular: 1.5rem;
-  --fz-title: 4.5rem;
-  @media (max-width: $laptop-md) {
-    --fz-title: 4.5rem;
-  }
+  --fz-regular: 1.6rem;
+  --fz-title: 5.7rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-title: 700;
+
   @media (max-width: $tablet) {
-    --fz-regular: 1rem;
-    --fz-title: 2.5rem;
+    --fz-regular: 1.6rem;
+    --fz-title: 4rem;
   }
-  @media (max-width: $mobile-xxs) {
-    // --fz-regular: 1rem;
+  @media (max-width: $mobile-xxlg) {
+    --fz-title: 3.4rem;
   }
 }
 
@@ -155,7 +170,7 @@ body._lock {
 
 
 @import "./keyframes";
-@import "./sections.crrt/section";
+@import "./sections.b/section";
 
 @import "./components";
 @import "./sections";

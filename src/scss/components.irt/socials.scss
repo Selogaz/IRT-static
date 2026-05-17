@@ -1,0 +1,38 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item {
+  display: flex;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.7em;
+  height: 3.6em;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.6);
+  transition: var(--tr-regular);
+  font-size: 1rem;
+}
+
+.socials__link:hover {
+  @media (any-hover: hover) {
+    background: #fff;
+    transform: translateY(-0.2rem);
+  }
+}
+
+.socials__icon {
+  display: block;
+  width: 2.1em;
+  height: 2.1em;
+  object-fit: contain;
+}

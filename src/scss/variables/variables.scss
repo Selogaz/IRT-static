@@ -1,29 +1,33 @@
 
 :root {
-  --base-size: 1vw;//#{"calc(1vw + 1vh)"};
+  // База для rem-системы: 1rem = 10px при ширине 1920
+  --base-size: 1vw;
 
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
+  --tr-jolly-enter: cubic-bezier(0.5, 0, 0.5, 1);
 
-  --p-container: 1.5rem;
+  // Контейнер: контентная область макета 1480px при канвасе 1920
+  --w-container: 148rem;
+  --p-container: 2rem;
 
-  @media (max-width: $tablet) {
-    --p-container: 1rem;
-  }
-
-
-  // Widths
-  --w-container: 117rem;
   @media (max-width: $tablet-xlg) {
     --w-container: 100%;
   }
+  @media (max-width: $tablet) {
+    --p-container: 2rem;
+  }
+  @media (max-width: $mobile-xlg) {
+    --p-container: 1.6rem;
+  }
 
+  // Радиусы
+  --radius-card: 5rem;
+  --radius-pill: 12rem;
+  --radius-control: 1.5rem;
 
-  --z-above-header: 103;
-  --z-burger: 102;
+  // Z-index
   --z-header: 100;
-  --z-main: 99;
-  --z-footer: 100;
-
-  --tr-jolly-enter: cubic-bezier(0.5, 0, 0.5, 1);
+  --z-modal: 200;
+  --z-tooltip: 300;
 }

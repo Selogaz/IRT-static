@@ -2,9 +2,9 @@
 <html lang="ru-RU">
   <head>
       @@include('tpls/b/meta-head.html',{
-        "title": "Car rent",
-        "desc": "",
-        "themeColor": "#1A1A1A",
+        "title": "Integral Resolution Therapy",
+        "desc": "Найдите и устраните первопричину проблем — уже за 1-3-5 сессий",
+        "themeColor": "#565FA3",
       })
       <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -12,186 +12,65 @@
   <body class="page-home">
 
     <div class="wrapper">
-      @@include('tpls/sections.crrt/header.html',{})
+      @@include('tpls/header.html',{})
 
       <main class="main">
 
-        <section class="hero section">
+        <section class="hero">
+          <img class="hero__glow" src="@img/main-page.irt/Decor-ellipse.png" alt="" aria-hidden="true">
+          <div class="hero__bg">
+            <picture class="hero__bg-pic">
+              <img class="hero__bg-img" src="@img/main-page.irt/two_chairs.png" alt="">
+            </picture>
+          </div>
+          <img class="hero__band" src="@img/main-page.irt/Decor-rect-3hero.png" alt="" aria-hidden="true">
+
           <div class="hero__container container">
             <div class="hero__offer">
-              <h2 class="section-title hero__title">
-                Прокат автомобилей на&nbsp;Мадейре
-                <strong>от 40€ в сутки</strong>
-              </h2>
-              <div class="bookform hero__bookform">
-                  @@include('./tpls/input/select.html', {className: 'hero__bookform-select', placeholder: 'Pick-up location'})
-                  @@include('./tpls/input/select.html', {className: 'hero__bookform-select', placeholder: 'Drop-off location'})
-                  <div class="hero__bookform-range b_rangepicker" data-lang="ru">
-                    @@include('./tpls/input/datepicker.html', {placeholder: 'Dates'})
-                    <input type="text" calss="is-hidden" name="date_start" hidden>
-                    <input type="text" calss="is-hidden" name="date_end" hidden>
-<!--                    @@include('./tpls/input/datepicker.html', {placeholder: 'End date'})-->
-                  </div>
-                  <div class="timepicker hero__bookform-timepicker"
-                       data-min="08:00"
-                       data-max="20:00"
-                       data-step="15"
-                  >
-                    <div class="timepicker__control">
-                      <div class="timepicker__drag"></div>
-                    </div>
-                    <input class="timepicker__value" type="text" name="time_from" inputmode="numeric">
-                  </div>
-                  <div class="timepicker hero__bookform-timepicker"
-                       data-min="08:00"
-                       data-max="20:00"
-                       data-step="15"
-                  >
-                    <div class="timepicker__control">
-                      <div class="timepicker__drag"></div>
-                    </div>
-                    <input class="timepicker__value" type="text" name="time_to" inputmode="numeric" value="14:10">
-                  </div>
-                  <button class="button-primary hero__bookform-submit">Подобрать автомобиль</button>
-              </div>
+              <h1 class="hero__title">
+                Найдите <br>и&nbsp;устраните <span class="hero__title-accent">первопричину</span> проблем
+              </h1>
+              <p class="hero__subtitle">
+                уже за 1-3-5 сессий вы увидите изменения и&nbsp;начнете
+                <strong class="hero__subtitle-strong">действовать по-новому</strong>
+              </p>
+              <a href="#callback" class="hero__cta button-primary">Получить консультацию</a>
             </div>
-            <div class="hero-gallery">
-              <div class="swiper hero-gallery__swiper">
-                <div class="swiper-wrapper">
-                  @@for (var i = 0; i < 8; i++) {
-                  <div class="swiper-slide hero-gallery__slide">
-                    <div class="hero__media">
-                      <picture class="hero__media-pic">
-                          <img src="./img/hero.crrt/hero-gallery.jpg" alt="" class="hero__media-img">
-                      </picture>
-                      <div class="hero__meida-caption">
-                        <div class="wysiwyg">
-                          <p>Посмотретие лучшие <br>маршруты на Мадейре</p>
-                        </div>
-                        <a href="#" class="hero__media-caption-link link">Смотреть маршруты</a>
-                      </div>
-                    </div>
-                  </div>
-                  }
-                </div>
-              </div>
-              <div class="b_swiper__buttons hero-gallery__buttons">
-                <div class="swiper-button-prev hero-gallery__button-prev"></div>
-                <div class="swiper-button-next hero-gallery__button-next"></div>
-              </div>
+
+            <div class="hero__stat">
+              <span class="hero__stat-badge">67% клиентам</span>
+              <p class="hero__stat-text">
+                <strong>достаточно 3х сессий</strong> <br>для полного решения запроса
+              </p>
             </div>
-            <div class="hero__bullets">
-              <div class="bullet-card">
-                <div class="bullet-card__media">
-                  <picture class="bullet-card__pic">
-                    <img class="bullet-card__img" src="./img/common.crrt/icon-time.svg" alt="">
-                  </picture>
-                </div>
-                <div class="bullet-card__content wysiwyg">
-                  <h3>Консультация 24\7</h3>
-                  <p>По лучшим маршрутам и техническим вопросам </p>
-                </div>
-              </div>
-              <div class="bullet-card">
-                <div class="bullet-card__media">
-                  <picture class="bullet-card__pic">
-                    <img class="bullet-card__img" src="./img/common.crrt/icon-car.svg" alt="">
-                  </picture>
-                </div>
-                <div class="bullet-card__content wysiwyg">
-                  <h3>Возможность</h3>
-                  <p>Продлить аренду автомобиля на неограниченный срок</p>
-                </div>
-              </div>
-              <div class="bullet-card">
-                <div class="bullet-card__media">
-                  <picture class="bullet-card__pic">
-                    <img class="bullet-card__img" src="./img/common.crrt/icon-protect.svg" alt="">
-                  </picture>
-                </div>
-                <div class="bullet-card__content wysiwyg">
-                  <h3>В цену включена</h3>
-                  <p>Страховка, полный бак, карта Мадейры и налог </p>
-                </div>
-              </div>
+
+            <div class="hero__cards">
+              @@include('tpls/hero-card.html',{
+                "icon": "heart_icon.svg",
+                "title": "Четкий запрос не обязателен",
+                "text": "ИРТ решает проблему даже если вы не до конца понимаете, что именно не так или не готовы делиться деталями."
+              })
+              @@include('tpls/hero-card.html',{
+                "icon": "first_exp_icon.svg",
+                "title": "ИРТ подходит как для первого опыта терапии",
+                "text": "Так и для тех, кто имеет обширный опыт, всё понимает о своей проблеме, но решить до конца не получается"
+              })
+              @@include('tpls/hero-card.html',{
+                "icon": "find.svg",
+                "title": "Найдите и устраните первопричину проблем",
+                "trigger": "IRT",
+                "tooltipTitle": "IRT (Integral Resolution Therapy)",
+                "tooltip": " — это метод для краткосрочной психотерапии. Суть в работе с бессознательными реакциями, которые формируют повторяющиеся жизненные сценарии. Вместо длительного анализа проблемы метод помогает изменить саму внутреннюю реакцию психики.",
+                "text": " комбинирует научные методы психотерапии: КПТ, ДПДГ (EMDR), гипноз и другие"
+              })
             </div>
           </div>
         </section>
 
-        <section class="shelf section" id="cars">
-          <div class="shelf__container container">
-            <h2 class="section-title shelf__title">
-              Выберите свой <br>автомобиль
-            </h2>
-            <div class="shelf__content">
-              @@include('tpls/components.crrt/car-card.html',{})
-              @@include('tpls/components.crrt/car-card.html',{})
-              @@include('tpls/components.crrt/car-card.html',{})
-              @@include('tpls/components.crrt/car-card.html',{})
-              @@include('tpls/components.crrt/car-card.html',{})
-              @@include('tpls/components.crrt/car-card.html',{})
-            </div>
-            <div class="shelf__buttons">
-              <button class="button-secondary shelf__button-more">Показать еще машины</button>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section reviews">
-          <div class="container reviews__container">
-            <h2 class="section-title section-text--center reviews__title">Отзывы</h2>
-            <div class="reviews-carousel">
-              <div class="swiper reviews-carousel__swiper">
-                <div class="swiper-wrapper">
-                  @@for (var i = 0; i < 3; i++) {
-                  <div class="swiper-slide reviews-carousel__slide">
-                    <article class="reviews-card">
-                      <div class="reviews-card__user">
-                        <picture class="reviews-card__user-pic">
-                          <source data-srcset="./img/reviews/review-photo.webp" type="image/webp">
-                          <img src="./img/reviews.crrt/review-photo.png" alt="" class="reviews-card__user-img">
-                        </picture>
-                        <h3 class="reviews-card__user-name">Алина Жиркова</h3>
-                      </div>
-                      <p class="reviews-card__feedback">
-                        Спасибо большое Юрию за консультацию. За час узнала куда сливается 40 тысяч из рекламного бюджета, поувольняла пол штата и наконец-то начала выходить в нормальный плюс по выручке!
-                        <br><br>
-                        Всем советую, быстро, чётко и по делу))
-                      </p>
-                    </article>
-                  </div>
-                  <div class="swiper-slide reviews-carousel__slide">
-                    <article class="reviews-card reviews-card--has-media">
-                      <div class="reviews-card__media">
-                        <div class="b_video" data-video-url="https://www.youtube.com/watch?v=Is908MiWIV8"></div>
-                      </div>
-                    </article>
-                  </div>
-                  }
-                </div>
-              </div>
-              <!-- <div class="swiper-pagination reviews-carousel__pagination"></div> -->
-              <div class="swiper-scrollbar reviews-carousel__scrollbar"></div>
-
-              <div class="swiper-buttons reviews-carousel__buttons">
-                <div class="swiper-button-prev reviews-carousel__button-prev"></div>
-                <div class="swiper-button-next reviews-carousel__button-next"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        @@include('tpls/sections.mdn/blog.html',{})
-
-        @@include('tpls/sections.mdn/faq.html',{})
+        @@include('tpls/quiz.html',{})
 
       </main>
-
-      @@include('tpls/sections.crrt/footer.html',{})
     </div>
-
-    @@include('tpls/modals.html', {})
 
     <script src="./js/index.min.js"></script>
   </body>

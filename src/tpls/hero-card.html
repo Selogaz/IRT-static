@@ -1,0 +1,21 @@
+<article class="hero-card">
+  <span class="hero-card__badge">
+    <img class="hero-card__icon" src="@img/common.irt/@@icon" alt="">
+  </span>
+  <div class="hero-card__content">
+    <h3 class="hero-card__title">@@title</h3>
+    @@if (typeof tooltip != 'undefined') {
+    <p class="hero-card__text">
+      <span class="hint" tabindex="0">
+        <span class="hint__trigger">@@trigger</span>
+        <span class="hint__popup" role="tooltip">
+          <span class="hint__text"><b>@@tooltipTitle</b>@@tooltip</span>
+        </span>
+      </span>@@text
+    </p>
+    }
+    @@if (typeof tooltip == 'undefined') {
+    <p class="hero-card__text">@@text</p>
+    }
+  </div>
+</article>

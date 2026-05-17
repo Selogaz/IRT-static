@@ -1,0 +1,33 @@
+<header class="header">
+  <div class="header__container container">
+    <nav class="header__bar">
+      <a href="/" class="header__logo logo" aria-label="Integral Resolution Therapy">
+        <img class="logo__img" src="@img/common.irt/main_logo.svg" alt="IRT" width="78" height="53">
+        <span class="logo__caption">Integral<br>Resolution<br>Therapy</span>
+      </a>
+
+      <ul class="header__nav menu">
+        <li class="menu__item"><a class="menu__link" href="#blog">Блог</a></li>
+        <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+        <li class="menu__item"><a class="menu__link" href="#about">О методе</a></li>
+      </ul>
+
+      @@include('socials.html', {"className": "header__socials"})
+    </nav>
+
+    <a href="#callback" class="header__callback">Обратный звонок</a>
+
+    <button type="button" class="header__lang" aria-label="Сменить язык">
+      <img class="header__lang-flag" src="@img/common.irt/rus_flag.svg" alt="" width="25" height="25">
+      <svg class="header__lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button type="button" class="header__burger burger" aria-label="Меню">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
